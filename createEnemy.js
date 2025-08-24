@@ -1,4 +1,4 @@
-function createEnemy(scene, startX, startY, patrolDistance, flyingEnemyManager) {
+function createEnemy(scene, startX, startY, patrolDistance) {
     const enemy = BABYLON.Mesh.CreatePlane("enemy", 1, scene);
 
     const mat = new BABYLON.StandardMaterial("enemyMat", scene);
