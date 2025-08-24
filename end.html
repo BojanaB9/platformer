@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            overflow: hidden;
+            width: 110%;
+            height: 110%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+        }
+        .center-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            padding-right: 400px;
+        }
+        button {
+            background-color: transparent;
+            position: absolute;
+            top: 58%;
+            left: 56%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            width: 170px;
+            height: 40px;
+        }
+    </style>
 </head>
-<body>
-$END$
+<body style="margin:0; overflow:hidden;
+      background:url('resources/forest.png') no-repeat center center; background-size: cover;">
+<div class="center-screen">
+    <img src="resources/ending.gif" width="470px" height="360px">
+    <button id="startButton"></button>
+    <script>
+        document.getElementById("startButton").addEventListener("click", () => {
+            // Navigate to your level page
+            window.location.href = "Level.html";
+        });
+    </script>
+
+</div>
+
 </body>
 </html>
